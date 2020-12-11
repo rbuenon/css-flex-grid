@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60px auto;
+}
+
+.header {
+    width: 100%;
+    padding: 0;
+    background-color: black;
+    align-self: center;
+}
+
+.header h1 {
+    color: white;
+    padding-left: 10px;
+}
+
+.content {
+    margin: 10px;
+    max-height: 80vh;
+    overflow: auto;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.task {
+    width: 300px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.title {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+}
+
+.title span {
+    padding-left: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.body {
+    max-height: 90px;
+    overflow: auto;
+    padding: 10px;
+    font: italic 12px Georgia, serif;
+}
+
